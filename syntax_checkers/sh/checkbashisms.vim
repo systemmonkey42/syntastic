@@ -15,7 +15,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! SyntaxCheckers_sh_checkbashisms_GetLocList() dict
-    let makeprg = self.makeprgBuild({ 'args': '-fx' })
+    let makeprg = self.makeprgBuild({ 'args': '-xp' })
 
     let errorformat =
         \ '%-Gscript %f is already a bash script; skipping,' .
